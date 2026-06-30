@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website sederhana</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./online-shop.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">TOPOUT<span>SHOP</span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item"><a href="#Home">Home<span></span></a></li>
+            <li class="nav-item"><a href="#Product">Product<span></span></a></li>
+            <li class="nav-item"><a href="#Contact">Contact<span></span></a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </nav>
+
+<!-- Home Section -->
+ <section id="home" class="hero">
+    <div class="reveal">
+        <h1>Tampilan Klasik, Jiwa <span>Modern</span></h1>
+        <p>Koleksi barang mutakhir dengan desain yang timeless. Dibuat khusus untuk 
+            mendukung penampilan dan jiwa kratif anda.</p>
+        <a href="#products" class="btn">Lihat Katalog</a>
+    </div>
+ </section>
+
+ <!-- Product Section -->
+ <section id="products" class="products">
+    <div class="section-title reveal">
+        <h2>Produk Terbaru</h2>
+        <p>Temukan produk terbaik dengan harga terbaik</p>
+     </div>
+
+     <div class="grid" id="product-grid">
+         <!-- API produk akan muncul disini -->
+     </div>
+    
+ </section>
+ 
+<!-- Contact Section -->
+ <section id="contact" class="contact">
+    <div class="section-title reveal">
+        <h2>Hubungi Kami</h2>
+        <p>Kirim pesan atau pertanyaan anda kepada kami.</p>
+    </div>
+
+    <form id="contact-form" class="contact-form" onsubmit="sendForm(event)">
+        <div class="form-group reveal">
+            <input type="text" id="name" placeholder="Masukkan nama anda" required />
+        </div>
+
+        <div class="form-group reveal">
+            <input type="email" id="email" placeholder="Masukkan email anda" required />
+        </div>
+
+        <div class="form-group reveal">
+            <input type="message" id="message" placeholder="Masukkan pesan anda" required />
+        </div>
+
+        <button type="submit" class="btn reveal">Kirim Pesan</button>
+    </form>
+    
+ </section>
+
+ <footer id="contact">
+    <p>&copy; 2026 TOPOUT. Crafting Precision.</p>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
